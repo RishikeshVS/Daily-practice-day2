@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> FORM </h1>
+    <form name="myform" method="post" action="successform.html" enctype="multipart/form-data">
+     <table>
+        <div class="element">
+            <tr>
+                <td>
+                    <label for="name"> Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name" required/>
+                </td>
+            </tr>
+        </div>
+        <div class="element">
+            <tr>
+                <td>
+                    <label for="age">Age</label>
+                </td>
+                <td>
+                    <input type="text" name="age" id="age" />
+                </td>
+            </tr>
+        </div>
+        <div class="element">
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" />
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" />
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" />                
+                </td>
+            </tr>
+        </div>
+        <div class="element">
+            <tr>
+                <td>
+                    <label for="dob">Date of birth</label>
+                </td>
+                <td>
+                    <input type="date" name="dob" id="dob" />    
+                </td>
+            </tr>
+        </div>
+        <div class="element">
+            <tr>
+                <td>
+        <label for="hobby"> Hobbies </label>
+                </td>
+                <td>
+                    <label for="read"> Reading </label> 
+                    <input type="checkbox" name="hobby" id="read" />
+                    <label for="write">Writing </label>
+                    <input type="checkbox" name="hobby" id="write" />
+                    <label for="code"> Coding </label>
+                    <input type="checkbox" name="hobby" id="code" />
+                    <label for="play">Playing</label>
+                    <input type="checkbox" name="hobby" id="play" />               
+                </td>
+            </tr>
+        </div>
+        <div class="element">
+            <tr>
+                <td>
+        <label for="mno"> Mobile number </label>
+                </td>
+                <td>
+                   <input type="text" name="mno" id="mno" pattern="[0-10]{10}" required />               
+                </td>
+            </tr>
+        </div>
+        <div class="element">
+            <tr>
+                <td>
+        <label for="file"> Upload your resume </label>
+                </td>
+                <td>
+                   <input type="file" name="file" id="file" accept=".pdf" />               
+                </td>
+            </tr>
+        </div>
+        <tr>
+            <td>
+                <input type="submit" />
+            </td>
+        </tr>
+    </table>
+    </form>
+
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+       form
+       {
+        display: flex;
+        justify-content: center;
+       }
+    
+    </style>
+</body>
+</html>

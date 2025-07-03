@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form</title>
+</head>
+<body>
+
+<h2>Regsitration from</h2>
+
+<form action="successform.html" method="post" autocomplete="on" enctype="multipart/form-data" name="form1">
+
+    <fieldset>
+        <legend>General Information</legend>
+        
+        <label for="text">Text:</label><br>
+        <input type="text" id="text1" name="text" placeholder="Enter text" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+        <label for="number">Number:</label><br>
+        <input type="number" id="number" name="number" min="1" max="100" step="1" value="50" required><br><br>
+
+        <label for="val"> Value given text box:</label><br>
+        <input type="text" name="val" id="val" value="Value also can be altered" />  <br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional Details</legend>
+
+        <label for="date">Date of birth:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="date">Time</label><br>
+        <input type="time" id="date" name="date" required><br><br>
+
+        <label for="date">Date and time</label><br>
+        <input type="datetime-local" id="date" name="date" required><br><br>
+
+        <label for="date">Week</label><br>
+        <input type="week" id="date" name="date" required><br><br>
+
+        <label for="date">Month</label><br>
+        <input type="month" id="date" name="date" required><br><br>
+
+        <label for="img"> Image: </label><br>
+        <input type="image" src="img1.jpg" /><br><br>
+
+        <label for="range">Range:</label><br>
+        <input type="range" id="range" name="range" min="0" max="100" value="50"><br><br>
+
+        <label for="gender"> Select Gender: </label><br>
+        <label for="male"> Male </label>
+        <input type="radio" name="gender" id="male" /> 
+        <label for="female"> Female </label>
+        <input type="radio" name="gender" id="female" /> 
+        <label for="other"> Other </label>
+        <input type="radio" name="gender" id="other" />   <br><br>
+
+        
+
+        <label for="pno"> Mobile Number:</label><br>
+        <input type="tel" name="pno" id="pno" pattern="[0-9]{10}" required/>    <br><br>
+
+        <label for="con"> Select Country: </label><br>
+        <input type="text" name="con" id="con" list="mylist" />
+        <datalist id="mylist">
+            <option> IND </option>
+            <option> USA </option>
+            <option> Africa </option>
+            <option> Europe </option>
+        </datalist>               <br><br>
+
+        <label for="deg"> Select Degree:</label>  <br>
+        <select name="deg" id="deg" >
+            <option selected> B.E.(Engineering) </option>
+            <option> B.Sc.(Science) </option>
+            <option> B.A.(Arts) </option> 
+        </select>        <br><br>
+
+        <label for="course"> Select Course: </label><br>
+        <select name="course" id="course" multiple > 
+            <option> select </option>
+            <option> CSE </option>
+            <option> IT </option>
+            <option> EEE </option>
+            <option> MECH </option>
+        </select>        <br><br>
+
+        <label for="str"> Select Stream: </label><br>
+        <select name="str" id="str" >
+            <option> select </option>
+            <optgroup label="Programming"> 
+            <option> Java </option>
+            <option> Python </option>
+            </optgroup>
+            <optgroup label="Testing"> 
+            <option> AWS </option>
+            <option> Azure </option>
+            </optgroup>
+        </select>               <br><br>
+        
+        <label for="link"> Paste your Github link:</label><br>
+        <input type="url" name="link" id="link" />    <br> <br>
+
+        <label for="vehicle">I have a vehicle:</label><br>
+        <input type="checkbox" id="vehicle" name="vehicle" value="car"><br><br>
+
+        <label for="cars">Choose a car:</label><br>
+        <select id="cars" name="cars">
+            <option value="volvo">Alto</option>
+            <option value="saab">Qwid</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message" required></textarea><br><br>
+
+        <label for="file">Upload file:</label><br>
+        <input type="file" id="file" name="file" accept=".jpg, .png"><br><br>
+
+        <label for="file"> Document Upload: </label> <br>
+        <label for="pic"> Photograph: </label>
+        <input type="file" name="file" id="pic" accept=".jpg"/>     <br>
+        <label for="sign"> Signature: </label>
+        <input type="file" name="file" id="sign" accept=".jpeg"/>      <br>
+        <label for="ms"> Marksheet: </label>
+        <input type="file" name="file" id="ms" accept=".pdf" multiple/>    <br>
+        <label for="adhar"> Adhaar card: </label>
+        <input type="file" name="file" id="adhar" accept=".jpg"/>    <br><br>
+
+        <label for="comp" id="comp"> Disabled </label><br>
+    <input type="text" name="comp" id="comp" value="Disabled content" disabled/>  <br><br>
+
+    <label for="comp" id="comp"> Readonly </label><br>
+    <input type="text" name="comp" id="comp" value="Readonly content" readonly/>  <br><br>
+
+    <label for="col"> Select your Fav color:</label><br>
+        <input type="color" name="col" id="col" /> <br>  <br>
+
+    <label for="search1"> Search something: </label><br>
+    <input type="search" name="search1" id="search1" />  <br><br>
+
+    <label for="gay"> Are you robot??</label><br>
+        <label for="yes"> YES </label>
+        <input type="radio" name="gay" id="yes" />
+        <label for="no"> NO </label>
+        <input type="radio" name="gay" id="no" /><br><br>
+
+
+        <label for="hobby"> Select your Hobbies: </label><br>
+        <label for="read"> Reading </label>
+        <input type="checkbox" name="hobby" id="read" /><br>
+        <label for="write"> Writing </label>
+        <input type="checkbox" name="hobby" id="write" checked/><br>
+        <label for="dance"> Dancing </label>
+        <input type="checkbox" name="hobby" id="dance" /><br>
+        <label for="code"> Coding </label>
+        <input type="checkbox" name="hobby" id="code" /><br>
+        <label for="sing"> Singing </label>
+        <input type="checkbox" name="hobby" id="sing" />    <br><br>
+
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Submission</legend>
+
+        <input type="hidden" id="hiddenInput" name="hiddenInput" value="hiddenValue"><br><br>
+
+        <input type="submit"/>  <br><br>
+
+        <input type="reset"/>   <br><br>
+
+        <input type="button" value="click"/>
+    </fieldset>
+
+
+
+</form>
+
+</body>
+</html>
